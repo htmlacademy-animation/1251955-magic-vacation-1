@@ -7,7 +7,7 @@ export default () => {
 
   const setSlider = function () {
     if (((window.innerWidth / window.innerHeight) < 1) || window.innerWidth < 769) {
-      storySlider = new Swiper(`.js-slider`, {
+      storySlider = new Swiper(`.js-slider`, {speed: 0,
         pagination: {
           el: `.swiper-pagination`,
           type: `bullets`
@@ -36,6 +36,7 @@ export default () => {
       });
     } else {
       storySlider = new Swiper(`.js-slider`, {
+        speed: 0,
         slidesPerView: 2,
         slidesPerGroup: 2,
         pagination: {
