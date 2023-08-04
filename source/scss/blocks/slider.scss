@@ -98,7 +98,7 @@
   line-height: 2rem;
 
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(4rem);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 
   .screen.active & {
