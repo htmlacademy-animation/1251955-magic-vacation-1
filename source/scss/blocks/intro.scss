@@ -99,7 +99,7 @@
   .screen.active & {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
+    transition: opacity $duration-medium ease-in-out, transform $duration-medium ease-in-out;
   }
 
   @media (min-width: $stop-scaling) {

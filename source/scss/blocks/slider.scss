@@ -99,7 +99,7 @@
 
   opacity: 0;
   transform: translateX(4rem);
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: opacity $duration-short ease-in-out, transform $duration-short ease-in-out;
 
   .screen.active & {
     transition-delay: 0ms, 650ms;
@@ -114,10 +114,8 @@
 
   .screen.active .swiper-slide-next & {
     transition-delay: 250ms, 250ms;
-    transition-duration: 500ms, 500ms;
+    transition-duration: $duration-long, $duration-long;
   }
-
-
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
